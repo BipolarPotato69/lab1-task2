@@ -22,4 +22,4 @@ The function also counts it's running time and shuts after 3 minutes.
 main.py year latitude longitude path_to_locations_list 
 ```
 ## Output example
-![alt text](https://github.com/BipolarPotato69/lab1-task2/blob/main/mappic.jpg?raw=true)
+![alt text](https://github.com/BipolarPotato69/lab1-task2/blob/main/mappic.png?raw=true)
