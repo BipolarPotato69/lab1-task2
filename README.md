@@ -1,9 +1,8 @@
-# lab1-task2
-Overview
+## Overview
 This module creates and html map and saves it to a given directory, using 4 parameters: year, latitude, longitude, path. The result is a map with 3 markers, which are closest filming sites to a given coordinate(longitude,latitude), filmed in a given year. The map is saved to path.
 Librsaries used: argparse, re, geopy, math, time, folium.
 
-Algorithm:
+## Algorithm
 Parcing() reads input from user using argparse library. It saves 4 variables(year, latitude, longitude , path) in args and returns it. 
 
 Read_data(path) takes path to a 'locations_list' file and reads it, it cleans missing data and saves dataset as a tuple of unique tuples, where each tuple looks like: (movie_name, year, address), example: ('One Night the Moon', '2001', 'South Australia, Australia').
@@ -17,3 +16,10 @@ sort_by_distance(coordinate_list) takes a list from name_to_coordinate and retur
 create_map, save_map and add_markers are simple and obvious functions, which use folium library.
 
 The function also counts it's running time and shuts after 3 minutes.
+
+## Usage
+```python
+main.py year latitude longitude path_to_locations_list 
+```
+## Output example
+![alt text](https://github.com/BipolarPotato69/lab1-task2/blob/main/mappic.png?raw=true)
